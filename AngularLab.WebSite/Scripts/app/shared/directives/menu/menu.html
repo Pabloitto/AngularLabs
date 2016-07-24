@@ -1,0 +1,23 @@
+﻿<div data-ng-init="init()">
+    <div id="sidebar-wrapper" ng-if="access">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="javscript:void(0)">{{titleLabel}}</a>
+            </li>
+            <li data-ng-repeat="menuItem in menu track by menuItem.Id">
+                <a class="menu-icon"
+                    data-ng-href="{{menuItem.Route}}">
+                    <i class="glyphicon" ng-class="menuItem.CssIcon"></i>
+                    <span class="icon-name">{{menuItem.Label}}
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-icon" href="javascrip:">
+                    <i class="glyphicon glyphicon-off"></i>
+                    <span class="icon-name">{{signOutLabel}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

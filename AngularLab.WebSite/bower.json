@@ -1,0 +1,11 @@
+{
+  "name": "AngularLab",
+  "version": "1.0",
+  "authors": [
+    "pablo <juanitto_40@hotmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
