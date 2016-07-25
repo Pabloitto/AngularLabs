@@ -157,3 +157,4 @@ $RECYCLE.BIN/
 packages
 bower_components
 node_modules
+/AngularLab.WebSite/Scripts/app/main.js
