@@ -125,8 +125,15 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\menu.css" />
     <Content Include="Global.asax" />
+    <Content Include="gulp-tasks\bundler.js" />
+    <Content Include="gulp-tasks\create-controller.js" />
+    <Content Include="gulp-tasks\serve.js" />
     <Content Include="gulpfile.js" />
     <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\badge\controllers\badge-controller.js" />
+    <Content Include="Scripts\app\badge\index.js" />
+    <Content Include="Scripts\app\badge\routes.js" />
+    <Content Include="Scripts\app\badge\views\badge-view.html" />
     <Content Include="Scripts\app\config\dependencies-config.js" />
     <Content Include="Scripts\app\config\routes-config.js" />
     <Content Include="Scripts\app\forms\controllers\forms-controller.js" />

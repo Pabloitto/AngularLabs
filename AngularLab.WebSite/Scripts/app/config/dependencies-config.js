@@ -7,6 +7,7 @@ module.exports = {
         require('./../grid/index');
         require('./../tab/index');
         require('./../popup/index');
+        require('./../badge/index');
         //{{INSERTHERE}}
     }
 };

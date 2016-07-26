@@ -6,6 +6,7 @@ module.exports = {
         require('./../grid/routes')($routeProvider).create();
         require('./../tab/routes')($routeProvider).create();
         require('./../popup/routes')($routeProvider).create();
+        require('./../badge/routes')($routeProvider).create();
         //{{INSERTHERE}}
     }
 };

@@ -21,7 +21,8 @@ namespace AngularLab.WebSite.Controllers
                 new {Id = 2 , Label = "Forms", CssIcon = "glyphicon-plus", Route = "#/forms"},
                 new {Id = 3 , Label = "Grid", CssIcon = "glyphicon-th-list", Route = "#/grid"},
                 new {Id = 4 , Label = "Tabs", CssIcon = "glyphicon-folder-open", Route = "#/tab"},
-                new {Id = 5 , Label = "Popups", CssIcon = "glyphicon-magnet", Route = "#/popup"}
+                new {Id = 5 , Label = "Popups", CssIcon = "glyphicon-magnet", Route = "#/popup"},
+                new {Id = 6 , Label = "Badge", CssIcon = "glyphicon-envelope", Route = "#/badge"}
             }, JsonRequestBehavior.AllowGet);
         }
     }

@@ -21,6 +21,7 @@
     "inquirer": "^1.1.2",
     "js-beautify": "^1.6.3",
     "lodash": "^4.14.0",
+    "require-dir": "^0.3.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1",
     "yargs": "^4.8.1"
