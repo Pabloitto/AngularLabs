@@ -56,6 +56,7 @@ gulp.task("directive", function () {
             });
 
         insertRequireIndexTemplate(root, answers.component_name, answers.directive_name);
+
     });
 
     function getDirectiveTemplate(viewPath) {
@@ -66,7 +67,7 @@ gulp.task("directive", function () {
         "            templateUrl: '../" + viewPath + "'," +
         "            transclude: true," +
         "            scope: {" +
-        "                panelOptions: \"=panelOptions\"" +
+        "                options: \"=options\"" +
         "            }," +
         "            controller: function ($scope) {" +
         "            }" +

@@ -5,11 +5,11 @@
             templateUrl: window.root + "Scripts/app/shared/directives/panel/panel.html",
             transclude: true,
             scope: {
-                panelOptions: "=panelOptions"
+                options: "=options"
             },
             controller: function ($scope) {
-                $scope.panelType = $scope.panelOptions.panelType || 'panel-primary';
-                $scope.title = $scope.panelOptions.title || '';
+                $scope.panelType = $scope.options.panelType || 'panel-primary';
+                $scope.title = $scope.options.title || '';
             }
         };
     }

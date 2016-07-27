@@ -44,12 +44,21 @@ gulp.task("controller", function () {
         insertRequireIndexTemplate(root, answers.component_name, answers.controller_name);
     });
 
-    function getControllerTemplate() {
+    function getControllerTemplate(controllerName) {
+        var title = controllerName.toUpperCase();
         var sb = "module.exports = {" +
-                 "        imports: ['$scope']," +
-                 "        body: function ($scope) {" +
-                 "        }" +
-                 "    };";
+                 "    imports: ['$scope']," +
+                 "    body: function ($scope) {" +
+                 "        $scope.layoutOptions = {" +
+                 "            title: '" + title + "'," +
+                 "            breadCrumbsOptions: {" +
+                 "                IsActive: false," +
+                 "                Text: '" + title + "'," +
+                 "                CssIcon: ''" +
+                 "            }" +
+                 "        };" +
+                 "    }" +
+                 "};";
         return sb;
     }
 

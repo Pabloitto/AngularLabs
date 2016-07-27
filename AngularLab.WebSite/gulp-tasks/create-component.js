@@ -32,7 +32,7 @@ gulp.task("component", function () {
 
         var viewFilePath = newControllerPath + "/views/" + viewFileName + ".html";
 
-        var controllerTemplate = beautify(getControllerTemplate(), { indent_size: 4 });
+        var controllerTemplate = beautify(getControllerTemplate(answers.controller_name), { indent_size: 4 });
 
         fs.writeFile(newControllerPath + "/controllers/" + controllerFileName + ".js", controllerTemplate,
             function (err) {
@@ -72,18 +72,27 @@ gulp.task("component", function () {
     });
 });
 
-function getControllerTemplate() {
+function getControllerTemplate(controllerName) {
+    var title = controllerName.toUpperCase();
     var sb = "module.exports = {" +
-             "        imports: ['$scope']," +
-             "        body: function ($scope) {" +
-             "        }" +
-             "    };";
+             "    imports: ['$scope']," +
+             "    body: function ($scope) {" +
+             "        $scope.layoutOptions = {" +
+             "            title: '" + title + "'," +
+             "            breadCrumbsOptions: {" +
+             "                IsActive: false," +
+             "                Text: '" + title + "'," +
+             "                CssIcon: ''" +
+             "            }" +
+             "        };" +
+             "    }" +
+             "};";
     return sb;
 }
 
 function getViewTemplate(controllerName) {
     var title = controllerName.toUpperCase();
-    var html = "<panel panel-options='{title : \"" + title + "\"}'> <div> " + title + " </div></panel>"
+    var html = "<layout options='layoutOptions'><div></div></layout>";
     var template = prettify(html, { indent_size: 4 });
     return template.toString();
 }
