@@ -126,7 +126,9 @@
     <Content Include="Content\css\menu.css" />
     <Content Include="Global.asax" />
     <Content Include="gulp-tasks\bundler.js" />
-    <Content Include="gulp-tasks\create-controller.js" />
+    <Content Include="gulp-tasks\create-component.js" />
+    <Content Include="gulp-tasks\create-directive.js" />
+    <Content Include="gulp-tasks\create-service.js" />
     <Content Include="gulp-tasks\serve.js" />
     <Content Include="gulpfile.js" />
     <Content Include="Scripts\app\app.js" />
