@@ -9,6 +9,9 @@ module.exports = {
         require('./../badge/routes')($routeProvider).create();
         require('./../button/routes')($routeProvider).create();
         require('./../breadcrumbs/routes')($routeProvider).create();
+        require('./../dropdown/routes')($routeProvider).create();
+        require('./../label/routes')($routeProvider).create();
+        require('./../alerts/routes')($routeProvider).create();
         //{{INSERTHERE}}
     }
 };

@@ -10,6 +10,9 @@ module.exports = {
         require('./../badge/index');
         require('./../button/index');
         require('./../breadcrumbs/index');
+        require('./../dropdown/index');
+        require('./../label/index');
+        require('./../alerts/index');
         //{{INSERTHERE}}
     }
 };
