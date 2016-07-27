@@ -8,6 +8,8 @@ module.exports = {
         require('./../tab/index');
         require('./../popup/index');
         require('./../badge/index');
+        require('./../button/index');
+        require('./../breadcrumbs/index');
         //{{INSERTHERE}}
     }
 };

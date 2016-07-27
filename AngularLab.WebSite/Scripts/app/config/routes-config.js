@@ -7,6 +7,8 @@ module.exports = {
         require('./../tab/routes')($routeProvider).create();
         require('./../popup/routes')($routeProvider).create();
         require('./../badge/routes')($routeProvider).create();
+        require('./../button/routes')($routeProvider).create();
+        require('./../breadcrumbs/routes')($routeProvider).create();
         //{{INSERTHERE}}
     }
 };

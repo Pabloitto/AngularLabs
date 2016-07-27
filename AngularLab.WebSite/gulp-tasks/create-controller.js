@@ -6,7 +6,7 @@ var path = require('path');
 var beautify = require('js-beautify').js_beautify;
 var prettify = require('js-beautify').html;
 var _ = require('lodash');
-gulp.task("controller", function () {
+gulp.task("component", function () {
 
     var root = "Scripts/app/";
 

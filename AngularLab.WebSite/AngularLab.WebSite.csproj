@@ -134,6 +134,14 @@
     <Content Include="Scripts\app\badge\index.js" />
     <Content Include="Scripts\app\badge\routes.js" />
     <Content Include="Scripts\app\badge\views\badge-view.html" />
+    <Content Include="Scripts\app\breadcrumbs\controllers\breadcrumbs-controller.js" />
+    <Content Include="Scripts\app\breadcrumbs\index.js" />
+    <Content Include="Scripts\app\breadcrumbs\routes.js" />
+    <Content Include="Scripts\app\breadcrumbs\views\breadcrumbs-view.html" />
+    <Content Include="Scripts\app\button\controllers\button-controller.js" />
+    <Content Include="Scripts\app\button\index.js" />
+    <Content Include="Scripts\app\button\routes.js" />
+    <Content Include="Scripts\app\button\views\button-view.html" />
     <Content Include="Scripts\app\config\dependencies-config.js" />
     <Content Include="Scripts\app\config\routes-config.js" />
     <Content Include="Scripts\app\forms\controllers\forms-controller.js" />
