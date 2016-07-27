@@ -13,7 +13,7 @@ gulp.task("component", function () {
     var questions = [{
         type: 'input',
         name: 'controller_name',
-        message: 'What\'s your controller name'
+        message: 'What\'s the name for your component'
     }, {
         type: 'input',
         name: 'route',
